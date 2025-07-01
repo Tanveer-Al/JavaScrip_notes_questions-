@@ -1,4 +1,4 @@
- // 5 types of function
+ // types of function
 
  // 1. function declaration
  //These are the classic way to define functions.
@@ -62,12 +62,111 @@
 
 // 7. async function
 // A function that operates asynchronously using the async/await syntax, allowing for non-blocking code
-async function asyncFunction() {
-    return "This is an async function";
-}
+// async function asyncFunction() {
+//     return "This is an async function";
+// }
 
-asyncFunction().then(result => {
-    console.log(result); // "This is an async function"
-}).catch(error => {
-    console.error("Error:", error);
-});
+// asyncFunction().then(result => {
+//     console.log(result); // "This is an async function"
+// }).catch(error => {
+//     console.error("Error:", error);
+// });
+
+
+// 8. higher-order function
+// A function that takes another function as an argument or returns a function as its result
+// function higherOrderFunction(callback) {
+//     console.log("This is a higher-order function");
+//     callback();
+// }
+// higherOrderFunction(function() {
+//     console.log("This is a callback function inside higher-order function");
+// });
+
+
+// 9. pure function
+// A function that always produces the same output for the same input and has no side effects
+// function pureFunction(x) {
+//     return x * 2;
+// }
+// console.log(pureFunction(5)); // 10
+// console.log(pureFunction(5)); // 10 (same input, same output)
+// console.log(pureFunction(10)); // 20 (different input, different output)
+// console.log(pureFunction(10)); // 20 (same input, same output)
+
+
+// 10. recursive function
+// A function that calls itself to solve a problem, often used for tasks like calculating factorials
+// function factorial(n) {
+//     if (n === 0) {
+//         return 1;
+//     } else {
+//         return n * factorial(n - 1);           
+//     }
+// }
+
+// console.log(factorial(0)); // 1 (0! = 1)
+// console.log(factorial(1)); // 1 (1! = 1)
+// console.log(factorial(5)); // 120 (5! = 5 * 4 * 3 * 2 * 1)
+
+
+// factorial(5)
+// = 5 * factorial(4)
+// = 5 * (4 * factorial(3))
+// = 5 * (4 * (3 * factorial(2)))
+// = 5 * (4 * (3 * (2 * factorial(1))))
+// = 5 * (4 * (3 * (2 * (1 * factorial(0)))))
+// = 5 * 4 * 3 * 2 * 1 * 1
+// = 120
+
+
+// 11. method
+// A function that is a property of an object, allowing for object-oriented programming 
+// const obj = {
+//     name: "John",
+//     greet: function() {
+//         console.log(`Hello, my name is ${this.name}`);
+//     }
+// };
+// obj.greet(); // "Hello, my name is John"
+// const obj1 = {
+//     name: "John",
+//     greet: () =>{
+//         console.log(`Hello, my name is ${this.name}`);
+//     }
+// };
+// obj1.greet();  // "Hello, my name is undefined" (arrow functions do not have their own 'this')
+
+
+// 12. constructor function
+// A function used to create objects, typically with the 'new' keyword, allowing for object-oriented programming
+// function Person(name, age) {
+//     this.name = name;
+//     this.age = age;
+//     this.greet = function() {
+//         console.log(`Hello, my name is ${this.name} and I am ${this.age} years old`);
+//     };
+// }    
+
+// const person1 = new Person("Alice", 30);
+// person1.greet(); // "Hello, my name is Alice and I am 30 years old"
+// const person2 = new Person("Bob", 25);
+// person2.greet(); // "Hello, my name is Bob and I am 25 years old"
+
+
+// 13. constructor function with arrow function
+// A constructor function that uses an arrow function for a method, which does not bind its own
+// function Person(name, age) {
+//     this.name = name;    
+//     this.age = age;
+//     this.greet = () => {
+//         console.log(`Hello, my name is ${this.name} and I am ${this.age} years old`);
+//     };
+// }
+// const person1 = new Person("Alice", 30);
+// person1.greet(); // "Hello, my name is Alice and I am 30 years
+// const person3 = new Person("Charlie", 35);
+// person3.greet(); // "Hello, my name is Charlie and I am 35 years old"
+// const person4 = new Person("David", 28);
+// person4.greet(); // "Hello, my name is David and I am 28 years old"
+
