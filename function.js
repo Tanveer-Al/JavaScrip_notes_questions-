@@ -170,3 +170,60 @@
 // const person4 = new Person("David", 28);
 // person4.greet(); // "Hello, my name is David and I am 28 years old"
 
+
+// Q=1=>) write a regular function that takes a string and returns it with the first letter capitalized
+// function capitalizeFirstLetter(str) {
+//     console.log(str.charAt(0).toUpperCase() + str.slice(1))
+// }
+// capitalizeFirstLetter("tanveer"); // "Tanveer"
+
+
+// Q=2=>) show an alert message that say "plese login" after 5 seconds on your browser
+// setTimeout(()=>{
+//     console.log("Please login");
+// },5000);
+
+
+// Q=3=>) make an arrow function that takes a price and a discount and returns the final price after applying the discount
+// const calculateFinalPrice = (price, discount) => {
+//   let dixcountPrice = price - (price * discount / 100)
+//   return dixcountPrice;
+// }
+// const finalPrice = calculateFinalPrice(1000, 10)
+// console.log(`The final price after discount is: ${finalPrice}`);
+
+
+
+// Q=4=>) create a function that builds a username from a full name.
+// function buildUsername(fullName) {
+//     const parts = fullName.split(" ");
+//     const username = parts[0].toLowerCase() + parts[1].toLowerCase().charAt(0);
+//     return username;
+// }
+// const username = buildUsername("Tanveer Ahmed");
+// console.log(`Your username is: ${username}`); // "tanveera"
+
+
+
+// Q=5=>) write a function that takes a traffic light color and gives the correct instruction (eg "go" for green "stop" for red "caution" for yellow and "invalid" for any other color)
+
+
+// function trafficLightInstruction(color) {
+//   let color;
+//   if(color === "green"){
+//     console.log("Go");
+//   }
+//   else if(color === "red"){
+//     console.log("Stop");
+//   }
+//     else if(color === "yellow"){
+//         console.log("Caution");
+//     }
+//     else{
+//         console.log("Invalid color");
+//     }
+// }
+// trafficLightInstruction("green"); // "Go"
+// trafficLightInstruction("red"); // "Stop"
+// trafficLightInstruction("yellow"); // "Caution"
+// trafficLightInstruction("blue"); // "Invalid color"
