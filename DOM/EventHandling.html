@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="EventHandling.css" />
+  </head>
+  <body>
+    <div class="box">
+      <!-- this is inline javascript -->
+      <button
+        onclick="console.log('click huwa hai')"
+        ondblclick="console.log('mujh par double click huwa hai')"
+      >
+        Click
+      </button>
+    </div>
+    <div class="box1"></div>
+    <form>
+        <input type="text" class="input">
+        <button class="button">Submit</button>
+        <button class="reset">Reset</button>
+    </form>
+
+    <!-- Question 1 -->
+    <div>
+        <button class="dec">-</button>
+        <span>1</span>
+        <button class="inc">+</button>
+    </div>
+
+    <!-- Question 2 -->
+     <form class="form">
+      <input type="text" id="name" placeholder="Enter Name">
+      <input type="email" id="email" placeholder="Enter Email">
+      <button type="submit" class="subBtn">Submit</button>
+     </form>
+
+    <script src="EventHandling.js"></script>
+  </body>
+</html>
